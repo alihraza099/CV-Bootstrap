@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden ;
+    font-family: 'Lato', sans-serif;
+}
+
+.offset::before{
+display: block;
+content: "";
+height: 6rem;
+}
+.navbar{
+    text-transform: uppercase;
+    font-size: 14ox;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,.5) !important;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+}
+
+.heading-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 3em;
+    font-weight: 300;
+    color: #fff;
+    font-family: monospace;
+}
+
+.heading-content h1{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.heading-content p{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ccc;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+img{
+    max-width: 100%;
+}
+.gallery img{
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+    width: 50%;
+    margin-left: 25%;
+}
+@media screen and (max-width:767px){
+    .navbar{
+        letter-spacing: .1rem;
+        padding: 10px 0;
+
+    }
+    
+    .heading-content h5{
+        font-size: 3em;
+    }
+    
+    .heading-content h1{
+        font-size: 3em;
+    }
+    
+    .heading-content p{
+        font-size: 0.9rem;
+    }
+
+}
+@media screen and (max-width:479px){
+    .navbar{
+        letter-spacing: .1rem;
+        padding: 7px 0;
+
+    }
+    
+    .heading-content h5{
+        font-size: 2em;
+    }
+    
+    .heading-content h1{
+        font-size: 2em;
+    }
+    
+    .heading-content p{
+        font-size: 0.9rem;
+    }
+}
